@@ -52,10 +52,10 @@ RAS
 18. Pour avoir le nombre d'utiliseurs, on compte les lignes du fichier avec `cat /etc/passwd | wc -l` : 31
 19. `man -k conversion` : 4 pages
 20. `find / -name 'passwd'`
-21. ``
-22. ``
-23. ``
-24. ``
+21. `find -name passwd |wc -l 1> ~/list_passwd_files.txt 2> /dev/null` 
+22. `grep "ll" -r`
+23. `locate history.log` : Situé /var/log/apt/history.log
+24. Le fichier n'est pas trouvé car on a pas mis à jour la database avec `updatedb`
 
 ## Exercice 3 - Découverte de l’éditeur de texte nano
 
@@ -63,8 +63,8 @@ RAS
 
 ## Exercice 4 - Personnalisation du shell
 
-3. 
-4. 
+3. `sudo -s`, `source .bashrc`
+4. `\e[35m[\A] - ${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;36m\]\w\[\033[00m\]\$`
 
 ## Exercice 5 - Pour les plus rapides
 
